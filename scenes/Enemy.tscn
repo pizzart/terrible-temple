@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 8.0
+height = 8.0
+
+[node name="Enemy" type="KinematicBody2D"]
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
