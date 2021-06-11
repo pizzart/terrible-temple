@@ -14,3 +14,5 @@ shape = SubResource( 1 )
 
 [node name="Light2D" type="Light2D" parent="."]
 texture = ExtResource( 2 )
+color = Color( 1, 0.984314, 0.811765, 1 )
+energy = 1.1
