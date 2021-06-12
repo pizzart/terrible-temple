@@ -8,6 +8,7 @@ func _physics_process(delta):
 func _on_body_entered(body: Node2D):
 	if body.is_in_group("Player"):
 		body.emit_signal("dead")
+		queue_free()
 	elif !body.is_in_group("Enemy"):
 		# play an explosion animaiton or smth
 		queue_free()

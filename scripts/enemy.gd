@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const CLOSE: float = 40.0
-const FAR: float = 150.0
+const FAR: float = 100.0
 const SPEED: float = 150.0
 var overlapping: Node2D
 var velocity: Vector2

@@ -6,6 +6,7 @@ const JUMP_HEIGHT: float = 300.0
 const GRAVITY: float = 20.0
 var velocity: Vector2
 var jumping: bool
+onready var checkpoint: Vector2 = position
 
 func _ready():
 	connect("dead", self, "_on_dead")
@@ -38,4 +39,6 @@ func jump():
 		jumping = true
 
 func _on_dead():
-	pass # restart from the last checkpoint
+	yield(Transitioner.transition_start(), "completed")
+	position = checkpoint
+	Transitioner.transition_end()

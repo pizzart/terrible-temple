@@ -105,7 +105,7 @@ tile_data = PoolIntArray( -19, 1, 1, 131054, 0, 0, 131061, 0, 0, 196591, 1, 0, 1
 [node name="Campfire" type="AnimatedSprite" parent="."]
 position = Vector2( -99, 66 )
 frames = SubResource( 9 )
-frame = 5
+frame = 2
 playing = true
 
 [node name="Light2D" type="Light2D" parent="Campfire"]
