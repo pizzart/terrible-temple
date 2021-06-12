@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-const CLOSE: float = 50.0
-const FAR: float = 150.0
-const SPEED: float = 100.0
+const CLOSE: float = 40.0
+const FAR: float = 120.0
+const SPEED: float = 150.0
 var velocity: Vector2
 var direction: Vector2
 var attack = preload("res://scenes/Attack.tscn")
@@ -53,4 +53,4 @@ func _on_Timer_timeout():
 
 func _on_Area_body_entered(body: Node2D):
 	if body is TileMap:
-		velocity.y -= 15
+		velocity.y -= 30

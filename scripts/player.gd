@@ -11,6 +11,14 @@ func _ready():
 
 func _physics_process(_delta):
 	var direction: float = Input.get_action_strength("right") - Input.get_action_strength("left")
+
+	if abs(direction) > 0:
+		$Sprite.animation = "walk"
+	else:
+		$Sprite.animation = "idle"
+
+	$Sprite.flip_h = direction < 0
+
 	velocity.x = lerp(velocity.x, direction * SPEED, 0.4)
 	velocity.y += GRAVITY
 	velocity = move_and_slide(velocity, Vector2.UP)

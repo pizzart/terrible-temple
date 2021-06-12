@@ -149,7 +149,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=33]
-extents = Vector2( 10.6696, 8.86816 )
+extents = Vector2( 10.67, 10 )
 
 [node name="Enemy" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -161,6 +161,7 @@ shape = SubResource( 1 )
 position = Vector2( 0, -7 )
 frames = SubResource( 32 )
 animation = "idle"
+frame = 4
 playing = true
 
 [node name="Timer" type="Timer" parent="."]
@@ -170,7 +171,7 @@ autostart = true
 [node name="Area" type="Area2D" parent="."]
 
 [node name="Collision" type="CollisionShape2D" parent="Area"]
-position = Vector2( 0, 11.219 )
+position = Vector2( 0, 15 )
 shape = SubResource( 33 )
 
 [node name="Light2D" type="Light2D" parent="."]
