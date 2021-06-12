@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const CLOSE: float = 40.0
-const FAR: float = 120.0
+const FAR: float = 150.0
 const SPEED: float = 150.0
 var overlapping: Node2D
 var velocity: Vector2
@@ -34,8 +34,8 @@ func _physics_process(delta):
 		$Animation.flip_h = true
 
 	if overlapping:
-		if $Area.overlaps_body(overlapping):
-			velocity.y -= 5
+		if $Bottom.overlaps_body(overlapping):
+			velocity.y -= 3
 
 	velocity = velocity.linear_interpolate(direction * SPEED, 0.02)
 	velocity = move_and_slide(velocity, Vector2.UP, false, 4, PI / 4, false)
@@ -63,3 +63,7 @@ func _on_Area_body_entered(body: Node2D):
 func _on_Area_body_exited(body: Node2D):
 	if body is TileMap:
 		overlapping = null
+
+func _on_top_body_entered(body: Node2D):
+	if body is TileMap:
+		velocity.y += 30

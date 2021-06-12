@@ -1,6 +1,6 @@
 extends Node
 
-const WAIT: float = 0.5
+const WAIT: float = 0.3
 const TYPE: int = Tween.TRANS_SINE
 const EASE_START: int = Tween.EASE_IN
 const EASE_END: int = Tween.EASE_OUT

@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 signal dead
 const SPEED: float = 100.0
-const JUMP_HEIGHT: float = 250.0
+const JUMP_HEIGHT: float = 300.0
 const GRAVITY: float = 20.0
 var velocity: Vector2
 var jumping: bool

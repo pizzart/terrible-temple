@@ -21,4 +21,6 @@ texture = ExtResource( 2 )
 color = Color( 1, 0.996078, 0.701961, 1 )
 range_layer_min = -2
 
+[node name="Tween" type="Tween" parent="."]
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

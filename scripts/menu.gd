@@ -6,7 +6,6 @@ func _ready():
 func _on_start():
 	yield(Transitioner.transition_start(), "completed")
 	get_tree().change_scene("res://scenes/Forest.tscn")
-	Transitioner.transition_end()
 
 func _on_start_focused():
 	# play a sound
