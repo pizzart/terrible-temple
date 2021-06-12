@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/menu.gd" type="Script" id=1]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Main" type="VBoxContainer" parent="."]
+anchor_left = 0.0227273
+anchor_top = 0.0454545
+anchor_right = 0.459091
+anchor_bottom = 0.954545
+margin_right = -48.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Title" type="Label" parent="Main"]
+margin_right = 192.0
+margin_bottom = 26.0
+text = "cool name"
+
+[node name="Buttons" type="VBoxContainer" parent="Main"]
+margin_top = 31.0
+margin_right = 192.0
+margin_bottom = 200.0
+size_flags_vertical = 3
+custom_constants/separation = 0
+alignment = 1
+
+[node name="Start" type="Button" parent="Main/Buttons"]
+margin_top = 68.0
+margin_right = 192.0
+margin_bottom = 84.0
+focus_neighbour_top = NodePath("../Quit")
+focus_neighbour_bottom = NodePath("../Quit")
+mouse_filter = 2
+button_mask = 0
+text = "> Start Game"
+flat = true
+align = 0
+
+[node name="Quit" type="Button" parent="Main/Buttons"]
+margin_top = 84.0
+margin_right = 192.0
+margin_bottom = 100.0
+focus_neighbour_top = NodePath("../Start")
+focus_neighbour_bottom = NodePath("../Start")
+mouse_filter = 2
+button_mask = 0
+text = "  Quit"
+flat = true
+align = 0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 167.821
+margin_top = 79.123
+margin_right = 433.821
+margin_bottom = 105.123
+text = "TEMPLE IN THE BG"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="focus_entered" from="Main/Buttons/Start" to="." method="_on_start_focused"]
+[connection signal="pressed" from="Main/Buttons/Start" to="." method="_on_start"]
+[connection signal="focus_entered" from="Main/Buttons/Quit" to="." method="_on_quit_focused"]
+[connection signal="pressed" from="Main/Buttons/Quit" to="." method="_on_quit"]
