@@ -33,6 +33,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 [node name="Temple" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+z_index = 1
 tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
@@ -45,4 +46,4 @@ position = Vector2( 152, 136 )
 position = Vector2( 328, 136 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0.505882, 0.439216, 0.654902, 1 )
+color = Color( 0.529412, 0.529412, 0.529412, 1 )

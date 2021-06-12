@@ -144,7 +144,7 @@ animations = [ {
 "frames": [ SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ) ],
 "loop": false,
 "name": "shoot",
-"speed": 5.0
+"speed": 7.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=33]
@@ -160,7 +160,6 @@ shape = SubResource( 1 )
 position = Vector2( 0, -7.18376 )
 frames = SubResource( 2 )
 animation = "idle"
-frame = 5
 playing = true
 
 [node name="Timer" type="Timer" parent="."]

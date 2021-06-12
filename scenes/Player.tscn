@@ -1,11 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
-[ext_resource path="res://graphics/light.png" type="Texture" id=2]
 [ext_resource path="res://graphics/temp-tile.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 8 )
+extents = Vector2( 6.07269, 6.08164 )
 
 [node name="Player" type="KinematicBody2D" groups=[
 "Player",
@@ -14,11 +13,6 @@ script = ExtResource( 1 )
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
-
-[node name="Light2D" type="Light2D" parent="."]
-texture = ExtResource( 2 )
-color = Color( 1, 0.984314, 0.811765, 1 )
-energy = 1.1
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 3 )
