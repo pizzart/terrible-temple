@@ -4,7 +4,7 @@
 [ext_resource path="res://graphics/temp-tile.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 6.07269, 6.08164 )
+extents = Vector2( 5.12132, 6.08164 )
 
 [node name="Player" type="KinematicBody2D" groups=[
 "Player",

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/forest.png-a6e498ed12fe709408031e500c361441.stex"
+path="res://.import/symbol-light.png-22862dd0b93c32daab5c572a244a72fa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/backgrounds/forest.png"
-dest_files=[ "res://.import/forest.png-a6e498ed12fe709408031e500c361441.stex" ]
+source_file="res://graphics/symbol-light.png"
+dest_files=[ "res://.import/symbol-light.png-22862dd0b93c32daab5c572a244a72fa.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/forest.png-a6e498ed12fe709408031e500c361441.stex"
+path="res://.import/lantern.png-30425ca5c02f6398659de177504cbdaa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/backgrounds/forest.png"
-dest_files=[ "res://.import/forest.png-a6e498ed12fe709408031e500c361441.stex" ]
+source_file="res://graphics/lantern.png"
+dest_files=[ "res://.import/lantern.png-30425ca5c02f6398659de177504cbdaa.stex" ]
 
 [params]
 

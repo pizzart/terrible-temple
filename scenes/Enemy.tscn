@@ -1,9 +1,10 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://scripts/enemy.gd" type="Script" id=1]
 [ext_resource path="res://graphics/mage/idle.png" type="Texture" id=2]
 [ext_resource path="res://graphics/mage/move.png" type="Texture" id=3]
 [ext_resource path="res://graphics/mage/shoot-h.png" type="Texture" id=4]
+[ext_resource path="res://graphics/light.png" type="Texture" id=5]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.0
@@ -160,6 +161,7 @@ shape = SubResource( 1 )
 position = Vector2( 0, -7.18376 )
 frames = SubResource( 2 )
 animation = "idle"
+frame = 1
 playing = true
 
 [node name="Timer" type="Timer" parent="."]
@@ -171,6 +173,10 @@ autostart = true
 [node name="Collision" type="CollisionShape2D" parent="Area"]
 position = Vector2( 0, 11.219 )
 shape = SubResource( 33 )
+
+[node name="Light2D" type="Light2D" parent="."]
+texture = ExtResource( 5 )
+color = Color( 0.831373, 0.462745, 1, 1 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
