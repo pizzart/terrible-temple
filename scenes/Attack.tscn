@@ -1,7 +1,8 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://scripts/attack.gd" type="Script" id=1]
 [ext_resource path="res://graphics/temp-attack.png" type="Texture" id=2]
+[ext_resource path="res://graphics/light.png" type="Texture" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 3.5
@@ -106,8 +107,12 @@ autostart = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 22 )
-frame = 13
+frame = 8
 playing = true
+
+[node name="Light2D" type="Light2D" parent="."]
+texture = ExtResource( 3 )
+color = Color( 0.443137, 0, 1, 1 )
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timeout"]
