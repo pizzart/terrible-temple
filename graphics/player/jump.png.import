@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/goblin_idle.png-2b017f9f540a512304359b10d1ab0aea.stex"
+path="res://.import/jump.png-695d33639e35e024c8003771673e09df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/goblin/goblin_idle.png"
-dest_files=[ "res://.import/goblin_idle.png-2b017f9f540a512304359b10d1ab0aea.stex" ]
+source_file="res://graphics/player/jump.png"
+dest_files=[ "res://.import/jump.png-695d33639e35e024c8003771673e09df.stex" ]
 
 [params]
 

@@ -1,6 +1,7 @@
 extends Area2D
 
 export var symbol: StreamTexture
+export var number: int
 var time: float
 var particles = preload("res://scenes/CollectParticles.tscn")
 var text = preload("res://scenes/CollectText.tscn")
