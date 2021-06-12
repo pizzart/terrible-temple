@@ -264,15 +264,13 @@ tile_data = PoolIntArray( -262145, 8, 0, -327680, 8, 0, -327679, 8, 0, -327678, 
 
 [node name="Lantern" parent="." instance=ExtResource( 5 )]
 position = Vector2( 376, 136 )
-frame = 3
 
 [node name="Lantern3" parent="." instance=ExtResource( 5 )]
 position = Vector2( 252.176, 184 )
-frame = 3
 
 [node name="Lantern2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 24, 72 )
-frame = 5
+frame = 2
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 184, 184 )
