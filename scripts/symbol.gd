@@ -1,7 +1,9 @@
 extends Area2D
 
+export var symbol: StreamTexture
 var time: float
 var particles = preload("res://scenes/CollectParticles.tscn")
+var text = preload("res://scenes/CollectText.tscn")
 onready var default_pos: Vector2 = position
 
 func _physics_process(delta):
@@ -14,4 +16,10 @@ func _on_body_entered(body: Node2D):
 		collect.position = position
 		collect.emitting = true
 		get_parent().add_child(collect)
+
+		var collect_text = text.instance()
+		collect_text.position = position
+		collect_text.symbol = symbol
+		get_parent().add_child(collect_text)
+
 		queue_free()

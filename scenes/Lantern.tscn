@@ -36,10 +36,11 @@ animations = [ {
 } ]
 
 [node name="Lantern" type="AnimatedSprite"]
+z_index = -1
 frames = SubResource( 7 )
-frame = 3
 playing = true
 
 [node name="Light2D" type="Light2D" parent="."]
 texture = ExtResource( 2 )
 color = Color( 1, 0.737255, 0.396078, 1 )
+range_layer_min = -2

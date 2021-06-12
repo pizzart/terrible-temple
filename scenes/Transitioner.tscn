@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/transitioner.gd" type="Script" id=1]
+
+[node name="Transitioner" type="CanvasLayer"]
+layer = 2
+script = ExtResource( 1 )
+
+[node name="Top" type="Polygon2D" parent="."]
+position = Vector2( 0, -110 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 0, 0, 0, 110, 440, 110, 440, 0 )
+
+[node name="TopTween" type="Tween" parent="."]
+
+[node name="Bottom" type="Polygon2D" parent="."]
+position = Vector2( 0, 220 )
+color = Color( 0, 0, 0, 1 )
+polygon = PoolVector2Array( 0, 0, 0, 110, 440, 110, 440, 0 )
+
+[node name="BottomTween" type="Tween" parent="."]
