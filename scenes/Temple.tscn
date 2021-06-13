@@ -439,46 +439,40 @@ shape = SubResource( 15 )
 
 [node name="Lantern" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( 376, 184 )
-frame = 0
 
 [node name="Lantern2" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( 24, 72 )
-frame = 3
+frame = 5
 
 [node name="Lantern3" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( 252.176, 184 )
+frame = 4
 
 [node name="Lantern4" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( -40, 184 )
-frame = 1
+frame = 3
 
 [node name="Lantern5" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( -248, 200 )
-frame = 0
 
 [node name="Lantern6" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( 568, 136 )
-frame = 0
 
 [node name="Lantern7" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( 376, 264 )
-frame = 0
 
 [node name="Lantern9" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( 280, 216 )
-frame = 5
+frame = 1
 
 [node name="Lantern8" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( 488, 280 )
-frame = 0
 
 [node name="Lantern10" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( 600, 232 )
-frame = 0
 
 [node name="Lantern11" parent="Lanterns" instance=ExtResource( 5 )]
 position = Vector2( 776, 248 )
-frame = 0
 
 [node name="Symbols" type="Node" parent="."]
 

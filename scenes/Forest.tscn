@@ -124,7 +124,7 @@ __meta__ = {
 [node name="Campfire" type="AnimatedSprite" parent="."]
 position = Vector2( -99, 66 )
 frames = ExtResource( 5 )
-frame = 6
+frame = 3
 playing = true
 
 [node name="Light2D" type="Light2D" parent="Campfire"]
@@ -182,6 +182,9 @@ color = Color( 0.231373, 0.188235, 0.360784, 1 )
 
 [node name="Dark" type="CanvasModulate" parent="."]
 color = Color( 0.4, 0.321569, 0.615686, 1 )
+
+[node name="DefaultSpawn" type="Position2D" parent="."]
+position = Vector2( -72, 74 )
 
 [connection signal="body_entered" from="Temple/Area2D" to="Temple/Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]

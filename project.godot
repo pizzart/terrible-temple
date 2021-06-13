@@ -10,8 +10,11 @@ config_version=4
 
 [application]
 
-config/name="GMTK2021"
-run/main_scene="res://scenes/Forest.tscn"
+config/name="Terrible Temple"
+run/main_scene="res://scenes/Menu.tscn"
+boot_splash/image="res://graphics/surrailwhale.png"
+boot_splash/bg_color=Color( 0.0887333, 0.074, 0.1, 1 )
+config/icon="res://graphics/icon.png"
 
 [autoload]
 
