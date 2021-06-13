@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scenes/Enemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://misc/tilesets/forest.tres" type="TileSet" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://graphics/terrain/flowers.png" type="Texture" id=8]
 [ext_resource path="res://scenes/Camera.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scripts/forest.gd" type="Script" id=10]
+[ext_resource path="res://graphics/cutscene1.webm" type="VideoStream" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Bush"
@@ -105,7 +106,6 @@ tile_data = PoolIntArray( -19, 1, 1, 131054, 0, 0, 131061, 0, 0, 196591, 1, 0, 1
 [node name="Campfire" type="AnimatedSprite" parent="."]
 position = Vector2( -99, 66 )
 frames = SubResource( 9 )
-frame = 2
 playing = true
 
 [node name="Light2D" type="Light2D" parent="Campfire"]
@@ -152,3 +152,15 @@ color = Color( 0.2304, 0.1872, 0.36, 1 )
 
 [node name="Dark" type="CanvasModulate" parent="."]
 color = Color( 0.4, 0.321569, 0.615686, 1 )
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_left = -156.864
+margin_top = -42.6536
+margin_right = 3.13597
+margin_bottom = 47.3464
+stream = ExtResource( 11 )
+autoplay = true
+expand = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
