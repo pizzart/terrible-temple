@@ -37,5 +37,7 @@ func _on_body_entered(body: Node2D):
 
 		$Tween.interpolate_property(pillar, "position", pillar.position, pillar.position - Vector2(0, 32), 0.2, Tween.TRANS_SINE, Tween.EASE_IN)
 		$Tween.start()
+		if number == 3:
+			get_parent().get_parent().emit_signal("all")
 		yield($Tween, "tween_all_completed")
 		queue_free()

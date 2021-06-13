@@ -149,7 +149,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=33]
-extents = Vector2( 4, 5 )
+extents = Vector2( 4, 3 )
 
 [sub_resource type="RectangleShape2D" id=34]
 extents = Vector2( 10, 3 )
@@ -166,7 +166,7 @@ shape = SubResource( 1 )
 position = Vector2( 0, -7 )
 frames = SubResource( 32 )
 animation = "idle"
-frame = 4
+frame = 6
 playing = true
 
 [node name="Timer" type="Timer" parent="."]
@@ -174,7 +174,7 @@ wait_time = 5.0
 autostart = true
 
 [node name="Bottom" type="Area2D" parent="."]
-position = Vector2( 0, 12 )
+position = Vector2( 0, 9 )
 
 [node name="Collision" type="CollisionShape2D" parent="Bottom"]
 shape = SubResource( 33 )

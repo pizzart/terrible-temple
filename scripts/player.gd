@@ -6,7 +6,7 @@ const JUMP_HEIGHT: float = 300.0
 const GRAVITY: float = 20.0
 var velocity: Vector2
 var jumping: bool
-onready var checkpoint: Vector2 = position
+onready var checkpoint: Vector2 = get_node("../DefaultSpawn").position
 
 func _ready():
 	connect("dead", self, "_on_dead")

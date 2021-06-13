@@ -8,6 +8,7 @@ var velocity: Vector2
 var direction: Vector2
 var attack = preload("res://scenes/Attack.tscn")
 var RNG = RandomNumberGenerator.new()
+onready var scripted: bool = get_parent().name == "Forest"
 onready var player = get_node("../Player")
 
 func _ready():
@@ -15,12 +16,17 @@ func _ready():
 
 func _physics_process(delta):
 	var distance: float = position.distance_to(player.position)
-	if distance <= CLOSE:
-		direction = -position.direction_to(player.position)
-	elif distance >= FAR:
-		direction = position.direction_to(player.position)
+	if !scripted:
+		if distance <= CLOSE:
+			direction = -position.direction_to(player.position)
+		elif distance >= FAR:
+			direction = position.direction_to(player.position)
+		else:
+			direction = Vector2()
+	elif distance < 200.0:
+		direction = Vector2.RIGHT / 1.5
 	else:
-		direction = Vector2()
+		direction = position.direction_to(player.position)
 
 	if $Animation.animation != "shoot":
 		if direction.length() > 0:
