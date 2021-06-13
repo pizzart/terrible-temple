@@ -152,7 +152,7 @@ animations = [ {
 extents = Vector2( 4, 5 )
 
 [sub_resource type="RectangleShape2D" id=34]
-extents = Vector2( 9, 6 )
+extents = Vector2( 10, 3 )
 
 [node name="Enemy" type="KinematicBody2D" groups=[
 "Enemy",
@@ -166,7 +166,7 @@ shape = SubResource( 1 )
 position = Vector2( 0, -7 )
 frames = SubResource( 32 )
 animation = "idle"
-frame = 3
+frame = 4
 playing = true
 
 [node name="Timer" type="Timer" parent="."]
@@ -180,7 +180,7 @@ position = Vector2( 0, 12 )
 shape = SubResource( 33 )
 
 [node name="Top" type="Area2D" parent="."]
-position = Vector2( 0, -11 )
+position = Vector2( 0, -8 )
 
 [node name="Collision" type="CollisionShape2D" parent="Top"]
 shape = SubResource( 34 )

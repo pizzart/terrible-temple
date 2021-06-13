@@ -69,4 +69,4 @@ func _on_Area_body_exited(body: Node2D):
 
 func _on_top_body_entered(body: Node2D):
 	if body is TileMap:
-		velocity.y += 30
+		velocity.y += 50

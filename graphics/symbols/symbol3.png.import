@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/runes.png-33c06008a01cde08823db3184f625660.stex"
+path="res://.import/symbol3.png-5eb2e798119b6312d1fc5c5e60a56b6e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/runes.png"
-dest_files=[ "res://.import/runes.png-33c06008a01cde08823db3184f625660.stex" ]
+source_file="res://graphics/symbols/symbol3.png"
+dest_files=[ "res://.import/symbol3.png-5eb2e798119b6312d1fc5c5e60a56b6e.stex" ]
 
 [params]
 
