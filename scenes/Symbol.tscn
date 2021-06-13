@@ -23,4 +23,6 @@ range_layer_min = -2
 
 [node name="Tween" type="Tween" parent="."]
 
+[node name="Tween2" type="Tween" parent="."]
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

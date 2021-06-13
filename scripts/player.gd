@@ -35,10 +35,14 @@ func _physics_process(_delta):
 func jump():
 	if is_on_floor():
 		velocity.y -= JUMP_HEIGHT
-		$Sprite.animation = "jump"
 		jumping = true
 
+		$Sprite.animation = "jump"
+		AudioManager.play("res://audio/sfx/jump.wav")
+
 func _on_dead():
+	AudioManager.play("res://audio/sfx/hit.wav")
 	yield(Transitioner.transition_start(), "completed")
 	position = checkpoint
+	get_node("../Enemy").position = position + Vector2(30, 0)
 	Transitioner.transition_end()

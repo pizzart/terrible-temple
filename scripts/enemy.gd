@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
-const CLOSE: float = 40.0
-const FAR: float = 100.0
+const CLOSE: float = 30.0
+const FAR: float = 70.0
 const SPEED: float = 150.0
 var overlapping: Node2D
 var velocity: Vector2
@@ -41,6 +41,7 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector2.UP, false, 4, PI / 4, false)
 
 func attack():
+	AudioManager.play("res://audio/sfx/enemy_charge.wav")
 	$Animation.animation = "shoot"
 	yield($Animation, "animation_finished")
 
@@ -50,6 +51,8 @@ func attack():
 	atk.direction = attack_dir
 	atk.position = position
 	get_parent().add_child(atk)
+
+	AudioManager.play("res://audio/sfx/enemy_shoot.wav")
 
 	$Animation.animation = "idle"
 
